@@ -40,6 +40,9 @@ class LinearRegression:
         plt.xlabel('X')
         plt.ylabel('y')
         plt.show()
+        
+    def predict(self, X):
+        return self.m*X + self.b
 
 # Example usage
 model = LinearRegression('C:/Users/User/Desktop/projects/pytorch/data/data.csv', 0.00000001, 1000)
